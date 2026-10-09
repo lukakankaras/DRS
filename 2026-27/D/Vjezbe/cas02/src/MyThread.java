@@ -11,7 +11,7 @@ public class MyThread implements Runnable {
 
     @Override
     public void run() {
-        for(int i = 0; i < 10000; i++) {
+        for(int i = 0; i < 100000; i++) {
             lock.enter(id);
             counter.value += 1;
             lock.exit(id);
